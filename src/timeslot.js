@@ -102,8 +102,7 @@ function addNewCalendar( name, timeslots, remindMethod, remindMinutes, remindEma
 
 
 
-
-/**function addToGoogle() {
+function addToGoogle() {
 	
 	var clientId = '1000599483308.apps.googleusercontent.com';
 	var apiKey = 'AIzaSyAkIyqo8PebedO89oCV5UyZHc_pJ0e7aKs';
@@ -121,7 +120,5 @@ function addNewCalendar( name, timeslots, remindMethod, remindMinutes, remindEma
 	function handleAuthResult() {
 		alert( "HELLO" );
 	}
-	
-	checkAuth();
 	
 }
