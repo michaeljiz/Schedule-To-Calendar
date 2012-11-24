@@ -1,5 +1,4 @@
-var Table = $('table').children();
-var rows = Table.children(); //An array of rows contaning columns
+
 
 
 var Classes = [];
@@ -7,7 +6,7 @@ function Parse(txt)
 {
 
 
-	return new Class(x,y,z);
+	//return new Class(x,y,z);
 }
 
 function Class (starttime, endtime, name)
@@ -16,14 +15,22 @@ function Class (starttime, endtime, name)
 	this.EndTime = endtime;
 	this.Name = name;
 }
-
-
-for(var ii = 0; ii < rows.length ; ++ii)
+var rows;
+var Table;
+function Load()
 {
-	var columns = rows[ii].children;
-	for(var jj = 0; jj< columns.length; ++jj)
+	Table = $('table').children();
+	rows = Table.children(); //An array of rows contaning columns
+	for(var ii = 0; ii < rows.length ; ++ii)
 	{
-		Classes.push(Parse(columns[jj].innerHTML));
+		var columns = rows[ii].children;
+		for(var jj = 0; jj< columns.length; ++jj)
+		{
+			console.log(columns[jj].innerHTML);
+			//Classes.push(Parse(columns[jj].innerHTML));
+		}
 	}
 }
 
+
+$(document).ready( Load );
