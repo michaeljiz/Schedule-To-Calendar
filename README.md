@@ -14,3 +14,12 @@ Multiple possible technologies might be used depending on the format of the prog
 
 Contributors
 ------------
+Connor Bode
+
+
+
+Useful Links
+--------------
+http://code.google.com/p/google-api-javascript-client/wiki/ReferenceDocs
+https://developers.google.com/google-apps/calendar/v3/reference/events/insert
+^^^^^^^^^^^Contains useful information for Google Calendar API
