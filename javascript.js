@@ -5,15 +5,34 @@ var Classes = [];
 function Parse(txt)
 {
 
+	var ii;
+	var jj;
+	if(txt.innerHTML.trim() != "&nbsp;")
+	{
+		
+		
+		
+		var x = $(txt).find('b')[0].nextSibbling;
+		var y = $(txt).find('b')[1].nextSibbling;
+		var z = $(txt).find('br')[0].nextSibbling;
+		var w = $(txt).find('br')[2].nextSibbling;
 
-	//return new Class(x,y,z);
+		x = x.textContent.trim();
+		y = y.textContent.trim();
+		z = z.textContent.trim();
+		w = w.textContent.trim();
+	}
+
+	return new Class(x,y,z,w);
+	
 }
 
-function Class (starttime, endtime, name)
+function Class (starttime, endtime, name, loc)
 {
 	this.StartTime = starttime;
 	this.EndTime = endtime;
 	this.Name = name;
+	this.location = loc;
 }
 var rows;
 var Table;
@@ -25,9 +44,10 @@ function Load()
 	{
 		var columns = rows[ii].children;
 		for(var jj = 0; jj< columns.length; ++jj)
+			
 		{
-			console.log(columns[jj].innerHTML);
-			//Classes.push(Parse(columns[jj].innerHTML));
+		
+			Classes.push(Parse(columns[jj]));
 		}
 	}
 }
