@@ -7,20 +7,25 @@ function Parse(txt)
 
 	var ii;
 	var jj;
-	if(txt.innerHTML.trim() != "&nbsp;")
+	if(txt.innerHTML.trim() != "&nbsp;" && $(txt).find('b').length != 0)
 	{
 		
 		
-		
-		var x = $(txt).find('b')[0].nextSibbling;
-		var y = $(txt).find('b')[1].nextSibbling;
-		var z = $(txt).find('br')[0].nextSibbling;
-		var w = $(txt).find('br')[2].nextSibbling;
+		//console.log(txt);
+		var x = $(txt).find('b')[0].nextSibling;
+		//console.log(x);
+		var y = $(txt).find('b')[1].nextSibling;
+		//console.log(y);
+		var z = $(txt).find('br')[0].nextSibling;
+		//console.log(z);
+		var w = $(txt).find('br')[2].nextSibling;
+		//console.log(w);
 
 		x = x.textContent.trim();
 		y = y.textContent.trim();
 		z = z.textContent.trim();
 		w = w.textContent.trim();
+		
 	}
 
 	return new Class(x,y,z,w);
