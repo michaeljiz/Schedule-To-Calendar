@@ -1,6 +1,8 @@
 
 
 
+	  // Setup the dnd listeners.
+  var dropZone; 
 var Classes = [];
 function Parse(txt)
 {
@@ -60,7 +62,52 @@ function Load()
 				Classes.push(t);
 		}
 	}
+	document.getElementById('drop_zone');
+	dropZone = document.getElementById('drop_zone');
+  dropZone.addEventListener('dragover', handleDragOver, false);
+  dropZone.addEventListener('drop', handleFileSelect, false);
 }
 
 
 $(document).ready( Load );
+
+
+	
+	function handleFileSelect(evt) 
+	{
+		evt.stopPropagation();
+		evt.preventDefault();
+
+		files = evt.dataTransfer.files; // FileList object.
+
+		// files is a FileList of File objects. List some properties.
+		var output = [];
+		for (var i = 0, f; f = files[i]; i++) {
+		  output.push('<li><strong>', f.name, '</strong></li>');
+		  console.log(f.name);
+		}
+		file = files[0];
+		$('#list').prepend('<ul>' + output.join('') + '</ul>');
+		ReadFile(file);
+  }
+
+  function handleDragOver(evt) {
+    evt.stopPropagation();
+    evt.preventDefault();
+    evt.dataTransfer.dropEffect = 'copy'; // Explicitly show this is a copy.
+  }
+
+  var reader;
+  function ReadFile(fileToRead)
+  {
+	reader = new FileReader();
+	reader.readAsText(fileToRead);
+	$('.head').text(file.name.substr(0,file.name.length - 4));
+	reader.onload = LoadFile;
+  }
+  
+    function LoadFile()
+  {
+DoStuff
+	
+  }
