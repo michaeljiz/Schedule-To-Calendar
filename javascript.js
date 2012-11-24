@@ -25,11 +25,15 @@ function Parse(txt)
 		y = y.textContent.trim();
 		z = z.textContent.trim();
 		w = w.textContent.trim();
-		
+		console.log(x);
+		console.log(y);
+		console.log(z);
+		console.log(w);
+		return new Class(x,y,z,w);
 	}
 
-	return new Class(x,y,z,w);
 	
+	return null;
 }
 
 function Class (starttime, endtime, name, loc)
@@ -51,8 +55,9 @@ function Load()
 		for(var jj = 0; jj< columns.length; ++jj)
 			
 		{
-		
-			Classes.push(Parse(columns[jj]));
+			var t = Parse(columns[jj]);
+			if(t != null)
+				Classes.push(t);
 		}
 	}
 }
