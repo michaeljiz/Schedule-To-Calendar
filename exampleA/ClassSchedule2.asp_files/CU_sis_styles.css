@@ -1,0 +1,112 @@
+BODY
+{
+    FONT-SIZE: 10px;
+    FONT-FAMILY: Verdana, Arial, Sans Serif
+}
+.cusistitle
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    PADDING-TOP: 5px;
+    FONT-FAMILY: Verdana, Arial, Sans Serif
+}
+.cusisheaderdata
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12px;
+    FONT-FAMILY: Verdana, Arial, Sans Serif;
+    TEXT-ALIGN: center
+}
+.cusistableheadingtitle
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 16pt;
+    FONT-FAMILY: Arial, Verdana;
+}
+.cusistablemessage
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10pt;
+    FONT-FAMILY: Arial, Verdana
+}
+TR.cusistableheading
+{
+    BACKGROUND-COLOR: #d3dce8
+}
+TD.cusistableheadingtext
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10px;
+    FONT-FAMILY: Verdana, Arial, Sans Serif
+}
+TD.cusistabledata
+{
+    FONT-SIZE: 10px;
+    FONT-FAMILY: Verdana, Arial, Sans Serif
+}
+.cusisinstructions
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10px;
+    FONT-FAMILY: Verdana, Arial, Sans Serif
+}
+.cusismessages
+{
+    FONT-SIZE: 12px;
+    FONT-FAMILY: Verdana, Arial, Sans Serif
+}
+SELECT
+{
+    FONT-SIZE: 10px;
+    FONT-FAMILY: Verdana, Arial, Helvetica, Sans-serif
+}
+INPUT.submit
+{
+    COLOR: white;
+    BACKGROUND-COLOR: #cccccc
+}
+INPUT.text
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12px;
+    FONT-FAMILY: Verdana, Arial, Sans Serif;
+    BACKGROUND-COLOR: #ffffff
+}
+.box
+{
+    BORDER-RIGHT: black thin solid;
+    BORDER-TOP: black thin solid;
+    BORDER-LEFT: black thin solid;
+    BORDER-BOTTOM: black thin solid;
+    BACKGROUND-COLOR: lemonchiffon
+}
+.small
+{
+    FONT-SIZE: 9px
+}
+.newstitle
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 14px;
+    COLOR: darkblue
+}
+.newsheader
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 16px;
+    COLOR: maroon;
+    TEXT-ALIGN: center
+}
+TD.leading
+{
+    BORDER-RIGHT: lightgrey thin;
+    BORDER-TOP: lightgrey thin;
+    PADDING-LEFT: 10pt;
+    BORDER-LEFT: lightgrey thin solid;
+    BORDER-BOTTOM: lightgrey thin
+}
+TD.cusistablecontent
+{
+    FONT-SIZE: 10px;
+    BACKGROUND-COLOR: #f2f4f0
+}
