@@ -7,8 +7,7 @@ var Classes = [];
 function Parse(txt)
 {
 
-	var ii;
-	var jj;
+	
 	if(txt.innerHTML.trim() != "&nbsp;" && $(txt).find('b').length != 0)
 	{
 		
@@ -49,6 +48,14 @@ var rows;
 var Table;
 function Load()
 {
+	document.getElementById('drop_zone');
+	dropZone = document.getElementById('drop_zone');
+  dropZone.addEventListener('dragover', handleDragOver, false);
+  dropZone.addEventListener('drop', handleFileSelect, false);
+}
+
+function StartParse()
+{
 	Table = $('table').children();
 	rows = Table.children(); //An array of rows contaning columns
 	for(var ii = 0; ii < rows.length ; ++ii)
@@ -62,12 +69,7 @@ function Load()
 				Classes.push(t);
 		}
 	}
-	document.getElementById('drop_zone');
-	dropZone = document.getElementById('drop_zone');
-  dropZone.addEventListener('dragover', handleDragOver, false);
-  dropZone.addEventListener('drop', handleFileSelect, false);
 }
-
 
 $(document).ready( Load );
 
@@ -83,11 +85,10 @@ $(document).ready( Load );
 		// files is a FileList of File objects. List some properties.
 		var output = [];
 		for (var i = 0, f; f = files[i]; i++) {
-		  output.push('<li><strong>', f.name, '</strong></li>');
 		  console.log(f.name);
 		}
 		file = files[0];
-		$('#list').prepend('<ul>' + output.join('') + '</ul>');
+		
 		ReadFile(file);
   }
 
@@ -102,12 +103,12 @@ $(document).ready( Load );
   {
 	reader = new FileReader();
 	reader.readAsText(fileToRead);
-	$('.head').text(file.name.substr(0,file.name.length - 4));
 	reader.onload = LoadFile;
   }
   
     function LoadFile()
   {
-DoStuff
-	
+	var recTxt = reader.result	;
+	$('#table_top').html(recTxt);
+	StartParse();
   }
