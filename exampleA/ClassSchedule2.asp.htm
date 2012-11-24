@@ -1,73 +1,999 @@
-<html><head>
-<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"><link rel="stylesheet" rev="stylesheet" href="ClassSchedule2.asp_files/CU_sis_styles.css" type="text/css" media="screen" charset="iso-8859-1">
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+    <link rel="stylesheet" rev="stylesheet" href="ClassSchedule2.asp_files/CU_sis_styles.css"
+        type="text/css" media="screen" charset="iso-8859-1">
+    <meta http-equiv="Pragma" content="no-cache">
+    <script type="text/javascript" language="javascript"><!--
 
-	
-	
-	<meta http-equiv="Pragma" content="no-cache">
-	<script type="text/javascript" language="javascript"><!--
-			
-			var Browser;
-			
-			function GetBrowser()
-				{	
-					if ( navigator.appName == "Microsoft Internet Explorer" ) 
-						{Browser = "IE"}
-					else if ( navigator.appName == "Netscape" ) 
-						{Browser = "NN"};
-				}		
-	
-			function PrintPage(Browser)
-				{	
-					if ( Browser=="IE" ) 
-						{
-						PRINTBUTTON1.style.display = "none";
-						PRINTBUTTON2.style.display = "none";
-						window.print();
-						PRINTBUTTON1.style.display = "block";
-						PRINTBUTTON2.style.display = "block";
-						}
-					else if ( Browser =="NN" ) 
-						{
-						//window.alert(Browser);
-						//document.layers['PRINTBUTTON1'].visibility = 'hide'
-						//document.PRINTBUTTON1.visibility = "hidden";
-						//document.PRINTBUTTON2.visibility = "hidden";
-						window.print()
-						//document.PRINTBUTTON1.visibility = "visible";
-						//document.PRINTBUTTON2.visibility = "visible";
-						};	
-				}		
+        var Browser;
+
+        function GetBrowser() {
+            if (navigator.appName == "Microsoft Internet Explorer")
+            { Browser = "IE" }
+            else if (navigator.appName == "Netscape")
+            { Browser = "NN" };
+        }
+
+        function PrintPage(Browser) {
+            if (Browser == "IE") {
+                PRINTBUTTON1.style.display = "none";
+                PRINTBUTTON2.style.display = "none";
+                window.print();
+                PRINTBUTTON1.style.display = "block";
+                PRINTBUTTON2.style.display = "block";
+            }
+            else if (Browser == "NN") {
+                //window.alert(Browser);
+                //document.layers['PRINTBUTTON1'].visibility = 'hide'
+                //document.PRINTBUTTON1.visibility = "hidden";
+                //document.PRINTBUTTON2.visibility = "hidden";
+                window.print()
+                //document.PRINTBUTTON1.visibility = "visible";
+                //document.PRINTBUTTON2.visibility = "visible";
+            };
+        }		
 
 		// -->
-	</script>
-	 
-    </head>
-    
-    <body onload="GetBrowser()">
+    </script>
+</head>
+<body onload="GetBrowser()">
     <!--
     <p class="cusisheaderdata">Check out Concordia&#8217;s new WISE (Web Integrated Services for Education) offerings at: 
     <A title=http://wise.concordia.ca/ href="http://wise.concordia.ca" target="_new">http://wise.concordia.ca</A>.</P>
     -->
     <div align="center">
-    
-	<p class="cusismessages" id="PRINTBUTTON1" style="visibility:visible;">
-		<a href="javascript:onClick=PrintPage(Browser)"><b>PRINT</b></a>
-	</p>	    
-
-<p class="cusisheaderdata">Fall  2012</p><table border="1" cellpadding="2" cellspacing="0"><tbody><tr class="cusistableheading"><td class="cusistableheadingtext">TIME</td><td class="cusistableheadingtext">&nbsp;MONDAY&nbsp;&nbsp;</td><td class="cusistableheadingtext">&nbsp;TUESDAY&nbsp;</td><td class="cusistableheadingtext">WEDNESDAY</td><td class="cusistableheadingtext">&nbsp;THURSDAY</td><td class="cusistableheadingtext">&nbsp;FRIDAY&nbsp;&nbsp;</td></tr><tr><td class="cusistabledata">10:15</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistablecontent" rowspan="8"><font color="black"></font><center><font color="black"><b>Start Time:</b>10:15<br>&nbsp;&nbsp;COMP 248 / 2<br>&nbsp;&nbsp;Tut Q QB <br>&nbsp;&nbsp;SGW H-817-<br><br><center><b>End Time:</b>11:55</center></font></center></td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td></tr><tr><td class="cusistabledata">10:30</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td></tr><tr><td class="cusistabledata">10:45</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td></tr><tr><td class="cusistabledata">11:00</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td></tr><tr><td class="cusistabledata">11:15</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td></tr><tr><td class="cusistabledata">11:30</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td></tr><tr><td class="cusistabledata">11:45</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td></tr><tr><td class="cusistabledata">12:00</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td></tr><tr><td class="cusistabledata">12:15</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td></tr><tr><td class="cusistabledata">12:30</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td></tr><tr><td class="cusistabledata">12:45</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td></tr><tr><td class="cusistabledata">13:00</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td></tr><tr><td class="cusistabledata">13:15</td><td class="cusistablecontent" rowspan="6"><font color="black"></font><center><font color="black"><b>Start Time:</b>13:15<br>&nbsp;&nbsp;COMP 248 / 2<br>&nbsp;&nbsp;Lec Q  <br>&nbsp;&nbsp;SGW H-520-<br><br><center><b>End Time:</b>14:30</center></font></center></td><td class="cusistabledata">&nbsp;</td><td class="cusistablecontent" rowspan="6"><font color="black"></font><center><font color="black"><b>Start Time:</b>13:15<br>&nbsp;&nbsp;COMP 248 / 2<br>&nbsp;&nbsp;Lec Q  <br>&nbsp;&nbsp;SGW H-520-<br><br><center><b>End Time:</b>14:30</center></font></center></td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td></tr><tr><td class="cusistabledata">13:30</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td></tr><tr><td class="cusistabledata">13:45</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td></tr><tr><td class="cusistabledata">14:00</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td></tr><tr><td class="cusistabledata">14:15</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td></tr><tr><td class="cusistabledata">14:30</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td></tr><tr><td class="cusistabledata">14:45</td><td class="cusistablecontent" rowspan="12"><font color="black"></font><center><font color="black"><b>Start Time:</b>14:45<br>&nbsp;&nbsp;ADMI 201 / 2<br>&nbsp;&nbsp;Lec A  <br>&nbsp;&nbsp;SGW MB-S2.210-<br><br><center><b>End Time:</b>17:30</center></font></center></td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td></tr><tr><td class="cusistabledata">15:00</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td></tr><tr><td class="cusistabledata">15:15</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td></tr><tr><td class="cusistabledata">15:30</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td></tr><tr><td class="cusistabledata">15:45</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td></tr><tr><td class="cusistabledata">16:00</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td></tr><tr><td class="cusistabledata">16:15</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td></tr><tr><td class="cusistabledata">16:30</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td></tr><tr><td class="cusistabledata">16:45</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td></tr><tr><td class="cusistabledata">17:00</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td></tr><tr><td class="cusistabledata">17:15</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td></tr><tr><td class="cusistabledata">17:30</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td></tr><tr><td class="cusistabledata">17:45</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistablecontent" rowspan="11"><font color="black"></font><center><font color="black"><b>Start Time:</b>17:45<br>&nbsp;&nbsp;COMP 232 / 2<br>&nbsp;&nbsp;Lec DD  <br>&nbsp;&nbsp;SGW H-520-<br><br><center><b>End Time:</b>20:15</center></font></center></td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td></tr><tr><td class="cusistabledata">18:00</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td></tr><tr><td class="cusistabledata">18:15</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td></tr><tr><td class="cusistabledata">18:30</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td></tr><tr><td class="cusistabledata">18:45</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td></tr><tr><td class="cusistabledata">19:00</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td></tr><tr><td class="cusistabledata">19:15</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td></tr><tr><td class="cusistabledata">19:30</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td></tr><tr><td class="cusistabledata">19:45</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td></tr><tr><td class="cusistabledata">20:00</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td></tr><tr><td class="cusistabledata">20:15</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td></tr><tr><td class="cusistabledata">20:30</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistablecontent" rowspan="8"><font color="black"></font><center><font color="black"><b>Start Time:</b>20:30<br>&nbsp;&nbsp;COMP 232 / 2<br>&nbsp;&nbsp;Tut DD DB <br>&nbsp;&nbsp;SGW H-400-<br><br><center><b>End Time:</b>22:10</center></font></center></td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td></tr><tr><td class="cusistabledata">20:45</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td></tr><tr><td class="cusistabledata">21:00</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td></tr><tr><td class="cusistabledata">21:15</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td></tr><tr><td class="cusistabledata">21:30</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td></tr><tr><td class="cusistabledata">21:45</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td></tr><tr><td class="cusistabledata">22:00</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td></tr><tr><td class="cusistabledata">22:15</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td><td class="cusistabledata">&nbsp;</td></tr></tbody></table><br><br>
-
-	<p class="cusismessages" id="PRINTBUTTON2" style="visibility:visible;">
-		<a href="javascript:onClick=PrintPage(Browser)"><b>PRINT</b></a>
-	</p>	
-
-	</div>
-    <br>Click <a href="https://psis.concordia.ca/personalschedule/ClassSchedule1.asp?sess=2&amp;studid=6458718&amp;webhelper_paramtimestamp=41237.5650462963&amp;webhelper_paramhashvalue=4A02505CF1FC9BD30467573581B35D34&amp;">here</a> for a different display.
-    <br><br>
+        <p class="cusismessages" id="PRINTBUTTON1" style="visibility: visible;">
+            <a href="javascript:onClick=PrintPage(Browser)"><b>PRINT</b></a>
+        </p>
+        <p class="cusisheaderdata">
+            Fall 2012</p>
+        <table border="1" cellpadding="2" cellspacing="0">
+            <tbody>
+                <tr class="cusistableheading">
+                    <td class="cusistableheadingtext">
+                        TIME
+                    </td>
+                    <td class="cusistableheadingtext">
+                        &nbsp;MONDAY&nbsp;&nbsp;
+                    </td>
+                    <td class="cusistableheadingtext">
+                        &nbsp;TUESDAY&nbsp;
+                    </td>
+                    <td class="cusistableheadingtext">
+                        WEDNESDAY
+                    </td>
+                    <td class="cusistableheadingtext">
+                        &nbsp;THURSDAY
+                    </td>
+                    <td class="cusistableheadingtext">
+                        &nbsp;FRIDAY&nbsp;&nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cusistabledata">
+                        10:15
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistablecontent" rowspan="8">
+                        <font color="black"></font>
+                        <center>
+                            <font color="black"><b>Start Time:</b>10:15<br>
+                                &nbsp;&nbsp;COMP 248 / 2<br>
+                                &nbsp;&nbsp;Tut Q QB
+                                <br>
+                                &nbsp;&nbsp;SGW H-817-<br>
+                                <br>
+                                <center>
+                                    <b>End Time:</b>11:55</center>
+                            </font>
+                        </center>
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cusistabledata">
+                        10:30
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cusistabledata">
+                        10:45
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cusistabledata">
+                        11:00
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cusistabledata">
+                        11:15
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cusistabledata">
+                        11:30
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cusistabledata">
+                        11:45
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cusistabledata">
+                        12:00
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cusistabledata">
+                        12:15
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cusistabledata">
+                        12:30
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cusistabledata">
+                        12:45
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cusistabledata">
+                        13:00
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cusistabledata">
+                        13:15
+                    </td>
+                    <td class="cusistablecontent" rowspan="6">
+                        <font color="black"></font>
+                        <center>
+                            <font color="black"><b>Start Time:</b>13:15<br>
+                                &nbsp;&nbsp;COMP 248 / 2<br>
+                                &nbsp;&nbsp;Lec Q
+                                <br>
+                                &nbsp;&nbsp;SGW H-520-<br>
+                                <br>
+                                <center>
+                                    <b>End Time:</b>14:30</center>
+                            </font>
+                        </center>
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistablecontent" rowspan="6">
+                        <font color="black"></font>
+                        <center>
+                            <font color="black"><b>Start Time:</b>13:15<br>
+                                &nbsp;&nbsp;COMP 248 / 2<br>
+                                &nbsp;&nbsp;Lec Q
+                                <br>
+                                &nbsp;&nbsp;SGW H-520-<br>
+                                <br>
+                                <center>
+                                    <b>End Time:</b>14:30</center>
+                            </font>
+                        </center>
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cusistabledata">
+                        13:30
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cusistabledata">
+                        13:45
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cusistabledata">
+                        14:00
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cusistabledata">
+                        14:15
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cusistabledata">
+                        14:30
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cusistabledata">
+                        14:45
+                    </td>
+                    <td class="cusistablecontent" rowspan="12">
+                        <font color="black"></font>
+                        <center>
+                            <font color="black"><b>Start Time:</b>14:45<br>
+                                &nbsp;&nbsp;ADMI 201 / 2<br>
+                                &nbsp;&nbsp;Lec A
+                                <br>
+                                &nbsp;&nbsp;SGW MB-S2.210-<br>
+                                <br>
+                                <center>
+                                    <b>End Time:</b>17:30</center>
+                            </font>
+                        </center>
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cusistabledata">
+                        15:00
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cusistabledata">
+                        15:15
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cusistabledata">
+                        15:30
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cusistabledata">
+                        15:45
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cusistabledata">
+                        16:00
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cusistabledata">
+                        16:15
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cusistabledata">
+                        16:30
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cusistabledata">
+                        16:45
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cusistabledata">
+                        17:00
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cusistabledata">
+                        17:15
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cusistabledata">
+                        17:30
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cusistabledata">
+                        17:45
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistablecontent" rowspan="11">
+                        <font color="black"></font>
+                        <center>
+                            <font color="black"><b>Start Time:</b>17:45<br>
+                                &nbsp;&nbsp;COMP 232 / 2<br>
+                                &nbsp;&nbsp;Lec DD
+                                <br>
+                                &nbsp;&nbsp;SGW H-520-<br>
+                                <br>
+                                <center>
+                                    <b>End Time:</b>20:15</center>
+                            </font>
+                        </center>
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cusistabledata">
+                        18:00
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cusistabledata">
+                        18:15
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cusistabledata">
+                        18:30
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cusistabledata">
+                        18:45
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cusistabledata">
+                        19:00
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cusistabledata">
+                        19:15
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cusistabledata">
+                        19:30
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cusistabledata">
+                        19:45
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cusistabledata">
+                        20:00
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cusistabledata">
+                        20:15
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cusistabledata">
+                        20:30
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistablecontent" rowspan="8">
+                        <font color="black"></font>
+                        <center>
+                            <font color="black"><b>Start Time:</b>20:30<br>
+                                &nbsp;&nbsp;COMP 232 / 2<br>
+                                &nbsp;&nbsp;Tut DD DB
+                                <br>
+                                &nbsp;&nbsp;SGW H-400-<br>
+                                <br>
+                                <center>
+                                    <b>End Time:</b>22:10</center>
+                            </font>
+                        </center>
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cusistabledata">
+                        20:45
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cusistabledata">
+                        21:00
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cusistabledata">
+                        21:15
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cusistabledata">
+                        21:30
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cusistabledata">
+                        21:45
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cusistabledata">
+                        22:00
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cusistabledata">
+                        22:15
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                    <td class="cusistabledata">
+                        &nbsp;
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <br>
+        <p class="cusismessages" id="PRINTBUTTON2" style="visibility: visible;">
+            <a href="javascript:onClick=PrintPage(Browser)"><b>PRINT</b></a>
+        </p>
+    </div>
+    <br>
+    Click <a href="https://psis.concordia.ca/personalschedule/ClassSchedule1.asp?sess=2&amp;studid=6458718&amp;webhelper_paramtimestamp=41237.5650462963&amp;webhelper_paramhashvalue=4A02505CF1FC9BD30467573581B35D34&amp;">
+        here</a> for a different display.
+    <br>
+    <br>
     <a href="https://psis.concordia.ca/personalschedule/login.asp">Back to Login</a>
-
-
-	
-	
-	
- 
-	</body></html>
+</body>
+</html>
