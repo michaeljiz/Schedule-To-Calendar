@@ -32,15 +32,12 @@ function timeslot( startTime, endTime, name, location ) {
 	Creates a new calendar in Google Calendar and populates the calendar with events.
 	
 	@param name The name of the calendar
-	@param remindMethod The reminder method for the calendar, options are: "email", "sms", "popup" -- see https://developers.google.com/google-apps/calendar/v3/reference/calendarList/insert
-	@param remindMinutes The number of minutes before the start of the event that the reminder should be triggered.
-	@param remindEmail The email which reminders will be sent to if remindMethod is set to "email"
 	@param timeslots An array of timeslot objects
 	@param endOfSemester A datetime representing the end of classes for the semester.  Used to mark the end of event recurrence
 
 	Specifications for datetime can be found here: http://tools.ietf.org/html/rfc3339#section-5
 **/
-function addNewCalendar( name, timeslots, remindMethod, remindMinutes, remindEmail, endOfSemester ) {
+function addNewCalendar( name, timeslots, endOfSemester ) {
 
 	// Create a new calendar request
 	var request = gapi.client.request({
@@ -83,19 +80,6 @@ function addNewCalendar( name, timeslots, remindMethod, remindMinutes, remindEma
 						},
 						'summary': timeslot.name,
 						'location': timeslot.location,
-						'attendees': [
-							{
-								'email': remindEmail
-							}
-						],
-						'reminders': {
-							'overrides': [
-								{
-									'method': remindMethod,
-									'minutes': remindMinutes
-								}
-							]
-						},
 						
 						// Recurrence rules according to iCalendar format
 						// See http://googleappsdeveloper.blogspot.ca/2011/12/calendar-v3-best-practices-recurring.html for explanation
